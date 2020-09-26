@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        function call_me()
+        {
+            var x=document.getElementById("name").value;
+            alert(x)
+        }</script>
+    </head>
+    <style>
+        body{
+            text-align: center;
+            background-image: url(https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
+            color: yellow;
+            font-size: 20px;
+            padding: 12px; 
+            font-style: oblique;
+        }
+        .forms{
+            text-align: center;
+            margin-left: 40px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            color: silver;
+        }
+        .form1{
+            border-radius: 20px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .button{
+            color: red;
+            background-color: black;
+            border: brown 1px solid;
+        }
+    </style>
+    <body>
+        <div class="container-fluid">
+            <div class="form1">
+                <h2><b>Fill this Form</b></h2>
+            </div>
+            <div class="forms">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <form>
+                            <label for="fname">First Name</label><br>
+                            <input type="text" id="name" class="input"><br><br>
+                            <label for="pswd">Password</label><br>
+                            <input type="password" id="pswd" class="input" ><br><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="button" onclick="call_me()">Click Me!</button>
+        </button>
+    </body>
+
+</html>
